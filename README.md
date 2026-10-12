@@ -1,18 +1,36 @@
 # 🌿 TaniDesaa — Local Agriculture Website
 
-TaniDesaa is a responsive agriculture website concept designed to connect local farming products with the community. It showcases agricultural products and provides a simple, accessible browsing experience for visitors.
+TaniDesaa is a responsive agriculture website concept designed to showcase local farming products and support the connection between farmers and their communities.
 
-This project is part of my Front-End Web Development portfolio.
+Inspired by rural agriculture in Indonesia, this project combines a clean user interface, product discovery features, and convenient contact options in one accessible website.
+
+This project was developed as part of my Front-End Web Development portfolio.
+
+## 🖼️ Preview
+
+### Main Website
+
+![TaniDesaa Main Preview](public/Preview.png)
+
+### Website Screenshots
+
+| Preview 1 | Preview 2 |
+|---|---|
+| ![TaniDesaa Preview 1](public/Preview-1.png) | ![TaniDesaa Preview 2](public/Preview-2.png) |
+
+### Additional Preview
+
+![TaniDesaa Preview 3](public/Preview-3.png)
 
 ## ✨ Features
 
-- **Responsive Design** — Adapted for desktop and mobile screens.
-- **Agricultural Product Catalog** — Browse local farming products.
+- **Responsive Design** — Designed to adapt to desktop and mobile screens.
+- **Agricultural Product Catalog** — Browse products related to local farming.
 - **Product Search** — Find products by name.
-- **Category Filtering** — Explore products by category.
+- **Category Filtering** — Filter products by category.
 - **Product Details** — View additional information about selected products.
-- **WhatsApp Ordering** — A convenient contact option for product inquiries.
-- **Agriculture-Inspired UI** — A green and cream visual theme inspired by rural landscapes and farming.
+- **WhatsApp Contact** — Convenient communication for product inquiries.
+- **Agriculture-Inspired Design** — A green and cream visual theme inspired by farming and rural landscapes.
 
 ## 🛠️ Technologies
 
@@ -21,43 +39,47 @@ This project is part of my Front-End Web Development portfolio.
 - HTML5
 - CSS3
 - Vite
-- Git & GitHub
+- Git and GitHub
 
 ## 🚀 Getting Started
 
-To run this project locally:
+Follow these steps to run the project locally.
 
-1. Clone the repository:
+### 1. Clone the repository
 
-   ```bash
-   git clone https://github.com/ujngflsh/tanidesaa.git
-   ```
+```bash
+git clone https://github.com/ujngflsh/tanidesaa.git
+```
 
-2. Open the project folder:
+### 2. Navigate to the project folder
 
-   ```bash
-   cd tanidesaa
-   ```
+```bash
+cd tanidesaa
+```
 
-3. Install dependencies:
+### 3. Install dependencies
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-4. Start the development server:
+### 4. Start the development server
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
-5. Open the local URL displayed in your terminal.
+Open the local URL displayed in your terminal.
 
 ## 📁 Project Structure
 
 ```text
 tanidesaa/
 ├── public/
+│   ├── Preview.png
+│   ├── Preview-1.png
+│   ├── Preview-2.png
+│   └── Preview-3.png
 ├── src/
 │   ├── assets/
 │   ├── App.jsx
@@ -72,15 +94,17 @@ tanidesaa/
 ## 🎯 Project Goals
 
 - Practice building responsive user interfaces with React.
-- Create a portfolio project inspired by local agriculture.
-- Demonstrate product browsing, search, filtering, and interactive UI development.
+- Demonstrate product search, category filtering, and interactive UI development.
+- Explore website design opportunities for local agriculture and rural communities.
+- Build a practical project for my Front-End Web Development portfolio.
 
 ## 👨‍💻 Developer
 
 **Ujang — Front-End Web Developer**
 
-GitHub: [@ujngflsh](https://github.com/ujngflsh)
+- GitHub: [@ujngflsh](https://github.com/ujngflsh)
+- Project Repository: [TaniDesaa](https://github.com/ujngflsh/tanidesaa)
 
 ---
 
-*Built as a portfolio project to explore web development for local agriculture and rural communities.*
+*Built as a portfolio project inspired by local agriculture and rural communities in Indonesia.*
