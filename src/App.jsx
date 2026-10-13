@@ -104,9 +104,13 @@ export default function App() {
 
   // Filter produk berdasarkan pencarian dan kategori
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.name
-      .toLowerCase()
-      .includes(search.toLowerCase());
+    const keyword = search.trim().toLowerCase();
+
+    const matchesSearch = [
+      product.name,
+      product.category,
+      product.description,
+    ].some((value) => value.toLowerCase().includes(keyword));
 
     const matchesCategory =
       activeCategory === "Semua" ||
@@ -538,31 +542,110 @@ export default function App() {
         </section>
       </main>
 
+      
       {/* ======================================
-          FOOTER LENGKAP
+          FOOTER TANIDESAA
       ====================================== */}
-      <footer className="footer">
-        <div className="container footer-inner">
-          <a className="brand footer-brand" href="#home">
-            <span className="brand-icon">🌿</span>
-            <span>
-              Tani<span className="brand-accent">Desaa</span>
-            </span>
-          </a>
+      <footer className="footer" id="kontak">
+        <div className="container">
+          <div className="footer-main">
+            {/* Identitas Website */}
+            <div className="footer-about">
+              <a className="brand footer-brand" href="#home">
+                <span className="brand-icon">🌿</span>
+                <span>
+                  Tani<span className="brand-accent">Desaa</span>
+                </span>
+              </a>
 
-          <p>Merawat bumi, mendukung petani, menyediakan pangan.</p>
+              <p className="footer-description">
+                Merawat bumi, mendukung petani, menyediakan pangan.
+                Menghubungkan hasil pertanian lokal dengan kebutuhan
+                keluarga Indonesia melalui pengalaman belanja online
+                yang praktis.
+              </p>
 
-          <div className="footer-links">
-            <a href="#home">Beranda</a>
-            <a href="#produk">Produk</a>
-            <a href="#tentang">Tentang Kami</a>
+              <span className="footer-badge">
+                🌱 Mendukung Pertanian Lokal
+              </span>
+            </div>
+
+            {/* Navigasi Website */}
+            <div className="footer-column">
+              <h3>Navigasi</h3>
+              <a href="#home">Beranda</a>
+              <a href="#produk">Produk Kami</a>
+              <a href="#tentang">Tentang Kami</a>
+              <a href="#kontak">Kontak</a>
+            </div>
+
+            {/* Kontak Pembuat */}
+            <div className="footer-column">
+              <h3>Informasi Pembuat</h3>
+
+              <p className="footer-contact-label">
+                Dikembangkan oleh
+              </p>
+
+              <p className="footer-creator">Ujang</p>
+
+              <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=akangujang30%40gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-contact-link"
+>
+                  ✉️ akangujang30@gmail.com
+              </a>
+
+              <p className="footer-contact-note">
+                Frontend Developer Portfolio
+              </p>
+            </div>
+
+            {/* Media Sosial */}
+            <div className="footer-column">
+              <h3>Temukan Saya</h3>
+
+              <p className="footer-social-description">
+                Kunjungi profil saya untuk melihat karya dan proyek lainnya.
+              </p>
+
+              <div className="footer-socials">
+                <a
+                  href="https://github.com/ujngflsh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Ujang"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/ujang-409671438/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn Ujang"
+                >
+                  LinkedIn ↗
+                </a>
+              </div>
+            </div>
           </div>
 
-          <span className="footer-copyright">
-            © {new Date().getFullYear()} TaniDesaa. Semua hak dilindungi.
-          </span>
+          {/* Copyright dan Garis Bawah */}
+          <div className="footer-bottom">
+            <p>
+              © {new Date().getFullYear()} TaniDesaa. Semua hak dilindungi.
+            </p>
+
+            <p className="footer-credit">
+              Designed &amp; Developed with 💚 by Ujang
+            </p>
+          </div>
         </div>
       </footer>
+
 
       {/* ======================================
           MODAL DETAIL PRODUK
